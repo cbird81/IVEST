@@ -1,0 +1,13 @@
+<?php
+
+$hn = 'localhost';
+$un= "root";
+$pw = '';
+$db = 'fund_id';
+
+$conn = new mysqli($hn, $un, $pw, $db);
+ 
+if ($conn->connect_error) { die("Database access failed: "  . $conn->error);
+}
+
+?>
